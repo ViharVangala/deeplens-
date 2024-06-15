@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full sm:w-96">
+        <h1 class="text-4xl font-semibold mb-8 text-center">Deeplens🔍</h1>
+        <h2 class="text-2xl font-semibold mb-4">Login</h2>
+        <form method="POST" action="/">
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
+                <input type="text" id="username" name="username" class="form-input w-full">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
+                <input type="password" id="password" name="password" class="form-input w-full">
+            </div>
+            <div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

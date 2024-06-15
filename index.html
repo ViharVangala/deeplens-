@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <center>
+        <h1>Upload a photo for Hashtag Generation</h1>
+        <form action="{{ url_for('after') }}" method="POST" enctype="multipart/form-data">
+            <!-- <label for="file-upload" class="custom-file-upload"> -->
+                <!-- <i class="fas fa-cloud-upload-alt"></i> Choose File -->
+            <!-- </label> -->
+            <input class="custom-file-upload" id="file-upload" type="file" name="file1" accept="image/*">
+            <button type="submit" class="btn-upload">Upload</button>
+        </form>
+    </center>
+</main>
+
+<style>
+    /* CSS for Choose File button */
+    .custom-file-upload {
+        border: 2px solid #ccc;
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #f8f9fa;
+        color: #333;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+    .custom-file-upload:hover {
+        background-color: #e9ecef;
+    }
+
+    /* CSS for Upload button */
+    .btn-upload {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .btn-upload:hover {
+        background-color: #0056b3;
+    }
+</style>
+{% endblock %}

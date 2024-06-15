@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <center>    
+        <img style="width:300px; padding:20px" src="{{ url_for('static', filename='file.jpg') }}" alt="">
+    </center>
+    <div class="container">
+        <div class="left-column"><b>Hashtags:</b> {{ final }}</div>
+        <div ><b>Caption:</b> {{ text }}</div>
+    </div>
+</main>
+{% endblock %}
